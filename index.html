@@ -1,0 +1,1197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anubhav Roda | Sports Business & Partnerships</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #101d35;
+  --navy2: #192e4c;
+  --teal: #18b8a6;
+  --coral: #ff7569;
+  --gold: #e9b95c;
+  --white: #ffffff;
+  --bg: #f4f6fa;
+  --muted: #718096;
+  --line: #e3e8ef;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--navy);
+  line-height: 1.7;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+section { padding: 100px 0; }
+
+.eyebrow {
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.section-title {
+  font-size: clamp(32px, 5vw, 48px);
+  letter-spacing: -2px;
+  margin: 14px 0;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(16,29,53,.97);
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-family: 'Manrope';
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+
+.logo span { color: var(--teal); }
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #d8e1ec;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+.nav-links .contact-nav {
+  border: 1px solid var(--teal);
+  padding: 9px 17px;
+  border-radius: 30px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 20%, #17635f 0%, transparent 30%),
+    linear-gradient(125deg, var(--navy), var(--navy2));
+  color: white;
+  padding: 115px 0 105px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(55px, 8vw, 100px);
+  line-height: .99;
+  letter-spacing: -7px;
+  margin: 22px 0;
+}
+
+.hero h1 span { color: var(--teal); }
+
+.hero-description {
+  color: #c5d2e2;
+  max-width: 650px;
+  font-size: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 13px 23px;
+  border-radius: 30px;
+  font-weight: 700;
+  display: inline-block;
+  transition: .25s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover { transform: translateY(-4px); }
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--navy);
+}
+
+.btn-secondary {
+  border: 1px solid #ffffff66;
+  color: white;
+}
+
+.hero-card {
+  padding: 30px;
+  border-radius: 24px;
+  background: #ffffff12;
+  border: 1px solid #ffffff25;
+}
+
+.hero-card h3 {
+  font-size: 23px;
+  margin: 15px 0 25px;
+}
+
+.hero-card small {
+  color: #a9bed1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.stat {
+  padding: 17px 0;
+  border-top: 1px solid #ffffff25;
+}
+
+.stat strong {
+  display: block;
+  color: var(--gold);
+  font: 800 23px 'Manrope';
+}
+
+.stat span { color: #c5d2e2; font-size: 13px; }
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.about-visual {
+  background: linear-gradient(140deg, #087e79, #142d4a);
+  min-height: 390px;
+  border-radius: 25px;
+  padding: 35px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-visual:after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 1px solid #ffffff44;
+  border-radius: 50%;
+  right: -100px;
+  bottom: -100px;
+  box-shadow: 0 0 0 35px #ffffff0a,
+              0 0 0 70px #ffffff08;
+}
+
+.initials {
+  font: 800 85px 'Manrope';
+  color: #ffffff38;
+}
+
+.about-visual h3 {
+  font-size: 29px;
+  max-width: 270px;
+  z-index: 1;
+}
+
+.about-content p {
+  color: var(--muted);
+  margin: 17px 0;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.about-tags span {
+  background: #e0f6f2;
+  color: #087c75;
+  border-radius: 30px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* EXPERIENCE SNAPSHOT */
+
+.snapshot {
+  background: var(--navy);
+  color: white;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.snapshot-item {
+  padding: 25px;
+  border-left: 2px solid var(--teal);
+}
+
+.snapshot-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.snapshot-item p {
+  color: #aebed0;
+  font-size: 13px;
+}
+
+/* CAREER */
+
+.career { background: #fff; }
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.filter {
+  padding: 10px 19px;
+  border-radius: 30px;
+  background: white;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.filter.active, .filter:hover {
+  background: var(--navy);
+  color: white;
+}
+
+.timeline {
+  max-width: 900px;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  bottom: 20px;
+  width: 2px;
+  background: linear-gradient(var(--teal),var(--coral));
+}
+
+.timeline-item {
+  padding-left: 43px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.timeline-item.hidden { display: none; }
+
+.dot {
+  position: absolute;
+  left: 1px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 4px solid #d8f5ef;
+}
+
+.timeline-content {
+  background: var(--bg);
+  padding: 25px;
+  border-radius: 17px;
+  border: 1px solid var(--line);
+  transition: .25s;
+}
+
+.timeline-content:hover {
+  transform: translateX(7px);
+  box-shadow: 0 15px 35px #101d3512;
+}
+
+.timeline-date {
+  color: #0b8e83;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+  font-size: 21px;
+  margin: 9px 0 4px;
+}
+
+.company {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.timeline-content ul {
+  margin: 15px 0 0 19px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timeline-content li { margin: 7px 0; }
+
+/* EDUCATION */
+
+.education { background: #edf2f8; }
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.edu-card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 28px;
+  border-radius: 19px;
+  transition: .25s;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px #101d3512;
+}
+
+.edu-year {
+  color: #a77521;
+  background: #fff4df;
+  display: inline-block;
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.edu-card h3 { font-size: 21px; }
+
+.edu-card p {
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* PROJECTS & ACHIEVEMENTS */
+
+.achievements {
+  background: white;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.achievement-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  transition: .25s;
+}
+
+.achievement-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-5px);
+}
+
+.achievement-card h3 {
+  margin: 12px 0;
+  font-size: 19px;
+}
+
+.achievement-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.achievement-number {
+  color: var(--coral);
+  font: 800 30px 'Manrope';
+}
+
+/* EXPERTISE */
+
+.expertise {
+  background: linear-gradient(120deg,var(--navy),#174451);
+  color: white;
+}
+
+.expertise .section-intro { color: #b7c8d8; }
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.skill {
+  padding: 21px;
+  border: 1px solid #ffffff24;
+  background: #ffffff0b;
+  border-radius: 15px;
+  transition: .25s;
+}
+
+.skill:hover {
+  background: #18b8a62a;
+  transform: translateY(-4px);
+}
+
+.skill h3 { font-size: 15px; }
+
+/* CONTACT */
+
+.contact {
+  background: #edf2f8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+}
+
+.contact-info p {
+  color: var(--muted);
+  margin-top: 18px;
+}
+
+.contact-link {
+  display: block;
+  margin-top: 25px;
+  font-weight: 700;
+  color: #087f78;
+}
+
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px #101d3510;
+}
+
+.field { margin-bottom: 16px; }
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font: inherit;
+  outline: none;
+}
+
+.field input:focus, .field textarea:focus {
+  border-color: var(--teal);
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* FOOTER */
+
+footer {
+  background: #091426;
+  color: #aebbd0;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer strong { color: white; }
+
+footer a { color: var(--teal); }
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:850px) {
+  .hero-grid, .about-grid, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .snapshot-grid { grid-template-columns: repeat(2,1fr); }
+  .skill-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media(max-width:650px) {
+  section { padding: 70px 0; }
+
+  .hero { padding: 75px 0; }
+  .hero h1 { letter-spacing: -4px; }
+
+  .menu-btn { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 20px 5%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .snapshot-grid, .skill-grid,
+  .education-grid, .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *:before, *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#home" class="logo">ANUBHAV <span>RODA.</span></a>
+
+    <button class="menu-btn" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#career">Career</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact" class="contact-nav">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Sports Business | Commercial Strategy</span>
+
+      <h1>ANUBHAV<br><span>RODA.</span></h1>
+
+      <p class="hero-description">
+        Sports partnerships, commercial strategy and sponsorship.
+        Connecting brands with sports properties through strategic
+        thinking, market insight and meaningful partnerships.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#career" class="btn btn-primary">Explore my journey</a>
+        <a href="https://www.linkedin.com/in/anubhavroda/"
+           target="_blank" rel="noopener" class="btn btn-secondary">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <small>Professional focus</small>
+      <h3>Connecting the business of sport with the business of brands.</h3>
+
+      <div class="stat">
+        <strong>Sports Partnerships</strong>
+        <span>Commercial opportunities and strategic relationships</span>
+      </div>
+
+      <div class="stat">
+        <strong>Commercial Strategy</strong>
+        <span>Sponsorship evaluation and market development</span>
+      </div>
+
+      <div class="stat">
+        <strong>Global Markets</strong>
+        <span>India, Middle East and Europe</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+
+    <div class="about-visual reveal">
+      <div class="initials">AR.</div>
+      <h3>Building the next generation of sports partnerships.</h3>
+    </div>
+
+    <div class="about-content reveal">
+      <span class="eyebrow">About me</span>
+      <h2 class="section-title">A career built around the business of sport.</h2>
+
+      <p>
+        Anubhav Roda is a sports management professional specialising
+        in sports partnerships, commercial strategy, sports marketing,
+        sponsorship and activations.
+      </p>
+
+      <p>
+        His professional experience spans sports properties, rights
+        holders and rights buyers, with exposure to India, the Middle
+        East and Europe.
+      </p>
+
+      <p>
+        His work covers commercial strategy, partnership development,
+        fan engagement, sports technology, events and sponsorship
+        activation.
+      </p>
+
+      <div class="about-tags">
+        <span>Sports Partnerships</span>
+        <span>Commercial Strategy</span>
+        <span>Sponsorship</span>
+        <span>Sports Marketing</span>
+        <span>Fan Engagement</span>
+        <span>Sports Technology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL SNAPSHOT -->
+<section class="snapshot">
+  <div class="container snapshot-grid">
+
+    <div class="snapshot-item reveal">
+      <h3>Global Markets</h3>
+      <p>Professional exposure across India, Middle East and Europe.</p>
+    </div>
+
+    <div class="snapshot-item reveal">
+      <h3>Sports Properties</h3>
+      <p>Experience working with leagues, teams and international rights holders.</p>
+    </div>
+
+    <div class="snapshot-item reveal">
+      <h3>Major Events</h3>
+      <p>Sports event delivery, commercial operations and marketing.</p>
+    </div>
+
+    <div class="snapshot-item reveal">
+      <h3>Partnerships</h3>
+      <p>Commercial development, sponsorship strategy and activation.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CAREER -->
+<section class="career" id="career">
+  <div class="container">
+
+    <span class="eyebrow">Professional journey</span>
+    <h2 class="section-title">Career & experience.</h2>
+    <p class="section-intro">
+      A journey across sports management, commercial partnerships
+      and the international sports industry.
+    </p>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="career">Career</button>
+      <button class="filter" data-filter="education">Education</button>
+      <button class="filter" data-filter="project">Projects</button>
+    </div>
+
+    <div class="timeline">
+
+      <article class="timeline-item reveal" data-category="career">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Current role</span>
+          <h3>Partnership Director</h3>
+          <div class="company">PinDrop</div>
+          <ul>
+            <li>Strategic sports partnerships and commercial development.</li>
+            <li>Brand and rights-holder relationship development.</li>
+            <li>Sponsorship strategy, valuation and activation opportunities.</li>
+            <li>Sports, gaming and emerging technology partnerships.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Add previous roles using verified LinkedIn employment details -->
+
+      <article class="timeline-item reveal" data-category="career">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Earlier career</span>
+          <h3>Previous Professional Experience</h3>
+          <div class="company">Add exact title and organisation from LinkedIn</div>
+          <ul>
+            <li>Insert the verified role description.</li>
+            <li>Add relevant commercial projects and achievements.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-category="project">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">June 2013</span>
+          <h3>Marketing and Promotion of I-League</h3>
+          <div class="company">Academic / Professional Project</div>
+          <ul>
+            <li>Study of the existing status and SWOT analysis of the league.</li>
+            <li>Development of proposed marketing initiatives.</li>
+            <li>Preparation of tentative budgets and implementation timelines.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-category="education">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024</span>
+          <h3>ESA Diploma</h3>
+          <div class="company">ESA</div>
+          <p>Professional qualification listed on LinkedIn.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-category="education">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2012 – 2013</span>
+          <h3>Academic Qualification</h3>
+          <div class="company">Institution and qualification to be confirmed</div>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-category="education">
+        <div class="dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2007 – 2011</span>
+          <h3>Academic Qualification</h3>
+          <div class="company">Institution and qualification to be confirmed</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+  <div class="container">
+
+    <span class="eyebrow">Academic background</span>
+    <h2 class="section-title">Education & qualifications.</h2>
+    <p class="section-intro">
+      Academic and professional qualifications listed on the profile.
+    </p>
+
+    <div class="education-grid">
+
+      <article class="edu-card reveal">
+        <span class="edu-year">2024</span>
+        <h3>ESA Diploma</h3>
+        <p>ESA</p>
+      </article>
+
+      <article class="edu-card reveal">
+        <span class="edu-year">2012 – 2013</span>
+        <h3>Qualification to be confirmed</h3>
+        <p>Exact qualification and institution not visible in indexed profile.</p>
+      </article>
+
+      <article class="edu-card reveal">
+        <span class="edu-year">2007 – 2011</span>
+        <h3>Qualification to be confirmed</h3>
+        <p>Exact qualification and institution not visible in indexed profile.</p>
+      </article>
+
+      <article class="edu-card reveal">
+        <span class="edu-year">1995 – 2007</span>
+        <h3>School Education</h3>
+        <p>Institution name to be confirmed.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements" id="achievements">
+  <div class="container">
+
+    <span class="eyebrow">Recognition & projects</span>
+    <h2 class="section-title">Achievements & highlights.</h2>
+    <p class="section-intro">
+      Selected achievements and projects recorded on the LinkedIn profile.
+    </p>
+
+    <div class="achievement-grid">
+
+      <article class="achievement-card reveal">
+        <div class="achievement-number">01</div>
+        <h3>Cricket-Business Quiz Competition</h3>
+        <p>
+          Awarded first prize in a Cricket-Business Quiz Competition
+          during a technical festival.
+        </p>
+      </article>
+
+      <article class="achievement-card reveal">
+        <div class="achievement-number">02</div>
+        <h3>Annual Sports Meet — Football</h3>
+        <p>
+          Won first prize in football during the annual sports meets
+          of March 2010 and March 2011.
+        </p>
+      </article>
+
+      <article class="achievement-card reveal">
+        <div class="achievement-number">03</div>
+        <h3>Vikram Sarabhai Rotating Shield Quiz</h3>
+        <p>
+          Participated and reached the semifinal stage of the competition.
+        </p>
+      </article>
+
+      <article class="achievement-card reveal">
+        <div class="achievement-number">04</div>
+        <h3>I-League Marketing Project</h3>
+        <p>
+          Developed a league assessment and proposed marketing
+          initiatives supported by budgets and timelines.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="expertise" id="expertise">
+  <div class="container">
+
+    <span class="eyebrow">Areas of expertise</span>
+    <h2 class="section-title">Core competencies.</h2>
+    <p class="section-intro">
+      Professional focus areas identified in Anubhav's LinkedIn profile.
+    </p>
+
+    <div class="skill-grid">
+
+      <div class="skill reveal"><h3>Sports Partnerships</h3></div>
+      <div class="skill reveal"><h3>Commercial Strategy</h3></div>
+      <div class="skill reveal"><h3>Sports Marketing</h3></div>
+      <div class="skill reveal"><h3>Sponsorship</h3></div>
+      <div class="skill reveal"><h3>Partnership Activations</h3></div>
+      <div class="skill reveal"><h3>Fan Engagement</h3></div>
+      <div class="skill reveal"><h3>Strategy & Planning</h3></div>
+      <div class="skill reveal"><h3>Sports Technology</h3></div>
+      <div class="skill reveal"><h3>Events</h3></div>
+      <div class="skill reveal"><h3>Athlete Management</h3></div>
+      <div class="skill reveal"><h3>Grassroots Sports</h3></div>
+      <div class="skill reveal"><h3>Web3.0</h3></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-info reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="section-title">Let's connect.</h2>
+      <p>
+        Interested in sports partnerships, commercial opportunities,
+        collaborations or simply exchanging ideas about the future
+        of the sports business?
+      </p>
+
+      <a class="contact-link"
+         href="https://www.linkedin.com/in/anubhavroda/"
+         target="_blank" rel="noopener">
+         Connect on LinkedIn →
+      </a>
+
+      <!-- Add verified email address here -->
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required placeholder="Your name">
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email"
+               required placeholder="Your email">
+      </div>
+
+      <div class="field">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" required
+                  placeholder="Write your message..."></textarea>
+      </div>
+
+      <button class="btn btn-primary" type="submit">
+        Prepare message →
+      </button>
+
+      <p id="formStatus" style="font-size:12px;margin-top:12px;color:#718096">
+        Email address needs to be configured before submitting.
+      </p>
+
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>ANUBHAV RODA</strong>
+      <p>Sports Business & Commercial Partnerships</p>
+    </div>
+
+    <a href="https://www.linkedin.com/in/anubhavroda/"
+       target="_blank" rel="noopener">LinkedIn</a>
+
+    <small>© <span id="year"></span> Anubhav Roda</small>
+  </div>
+</footer>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuButton = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav-links');
+
+menuButton.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  });
+});
+
+
+// CAREER TIMELINE FILTER
+
+const filterButtons = document.querySelectorAll('.filter');
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    const category = button.dataset.filter;
+
+    filterButtons.forEach(item =>
+      item.classList.toggle('active', item === button)
+    );
+
+    timelineItems.forEach(item => {
+      const show =
+        category === 'all' ||
+        item.dataset.category === category;
+
+      item.classList.toggle('hidden', !show);
+    });
+  });
+});
+
+
+// SCROLL REVEAL ANIMATIONS
+
+const observer = new IntersectionObserver((entries, observer) => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+
+  });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(element => {
+  observer.observe(element);
+});
+
+
+// CONTACT FORM
+
+document.getElementById('contactForm').addEventListener('submit', event => {
+
+  event.preventDefault();
+
+  // Replace with a verified email address.
+  const recipient = 'REPLACE_WITH_EMAIL';
+
+  if (recipient === 'REPLACE_WITH_EMAIL') {
+    document.getElementById('formStatus').textContent =
+      'Please configure the recipient email address in the JavaScript.';
+    return;
+  }
+
+  const form = event.currentTarget;
+
+  const name = form.elements.name.value;
+  const email = form.elements.email.value;
+  const message = form.elements.message.value;
+
+  const subject = encodeURIComponent('Portfolio enquiry');
+
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\n${message}`
+  );
+
+  window.location.href =
+    `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+});
+
+
+// CURRENT YEAR
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
